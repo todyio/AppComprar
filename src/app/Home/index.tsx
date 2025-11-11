@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View, Image } from "react-native";
+import { View, Image } from "react-native";
 import { styles } from "./styles"
 import { Button } from "@/components/Button";
 
@@ -8,7 +8,7 @@ export function Home() {
         <View style={styles.container}>
             <Image source={require("@/assets/logo.png")} style={styles.logo} />
             <StatusBar style="auto" />
-            <Button />
+            <Button title={"Entrar"} />
         </View>
     );
 }
