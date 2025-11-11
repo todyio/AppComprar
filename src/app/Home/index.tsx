@@ -1,12 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { Text, View, Image } from "react-native";
 import { styles } from "./styles"
+import { Button } from "@/components/Button";
 
-export  function Home() {
+export function Home() {
     return (
         <View style={styles.container}>
-            <Text>Open up App.tsx to start working on your app!</Text>
+            <Image source={require("@/assets/logo.png")} style={styles.logo} />
             <StatusBar style="auto" />
+            <Button />
         </View>
     );
 }
