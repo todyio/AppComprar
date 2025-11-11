@@ -9,8 +9,11 @@ export function Home() {
         <View style={styles.container}>
             <Image source={require("@/assets/logo.png")} style={styles.logo} />
             <StatusBar style="auto" />
-            <Input placeholder="Oque você precisa comprar?" />
-            <Button title={"Entrar"} />
+            <View style={styles.form}>
+                <Input placeholder="Oque você precisa comprar?" />
+                <Button title={"Entrar"} />
+            </View>
+            <View style={styles.content}> </View>
         </View>
     );
 }
